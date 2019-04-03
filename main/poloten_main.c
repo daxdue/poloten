@@ -52,9 +52,9 @@
 #define ESP_INTR_FLAG_DEFAULT 0
 #define TAG 				3
 
-#define WEB_SERVER 			"clickbag.ru"
+#define WEB_SERVER 			"server"
 #define WEB_PORT 			80
-#define WEB_URL  			"http://clickbag.ru/check_product.php?action=check&uid=1234"
+#define WEB_URL  			"server_url"
 #define BLUFI_DEVICE_NAME	"Poloten 1.0"
 #define WIFI_LIST_NUM   	10
 
@@ -72,8 +72,6 @@ uint8_t flag_state = 0;
 uint8_t power_mode = 0;
 
 static uint8_t service_uuid128[32] = {
-    /* LSB <--------------------------------------------------------------------------------> MSB */
-    //first uuid, 16bit, [12],[13] is the value
     0xfb, 0x34, 0x9b, 0x5f, 0x80, 0x00, 0x00, 0x80, 0x00, 0x10, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00,
 };
 const int CONNECTED_BIT = BIT0;
